@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/NusantaraProject//jasmine_sprout/Nusantara_v1.0-jasmine_sprout-14082020-OFFICIAL-0602.zip
-  ROM_NAME: Generic:Nusantara_v1
-  ZIP_NAME: Nusantara_v1
+  ROM_URL: https://dumps.adxd.live/0:/MIUISR/Phoenix/MIUISR_Crimson_22.8.3-Phoenix.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -35,7 +35,7 @@ jobs:
               pip install pyrogram tgcrypto
 
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
+         run: git clone https://github.com/Aur0la/ErfanGSIs.git
 
        - name: Setting up ErfanGSI requirements
          run: |
